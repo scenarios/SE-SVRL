@@ -1,0 +1,38 @@
+description: SRTCP Experiments R2Plus1D on Kinetics (Pretrain) and Ucf (All/Linear Finetune(Adam))， proj 512, T 0.2, all finetune dropout 0.8, linear finetune lr 1.0
+
+target:
+  service: amlk8s
+  name: itpscusv100cl
+  vc: resrchvc
+
+environment:
+  image: wgting96/mmcv:pytorch1.6-cuda10.1-mmcv1.1
+
+storage:
+  data:
+    storage_account_name: xysun4philly
+    container_name: v-yizzh
+
+code:
+  code_upload: True
+  local_dir: $CONFIG_DIR/../../
+
+jobs:
+
+  - name: SRTCP-AuxDS-bugfix_K400PUcfF-ep200-bs64-ts16-ss112-T0.07-proj512_ucf-ALFinetune-largerDpLr-ep150-bs32-ts16-ss112_ModelR2p1dl18
+    sku: G8
+    command:
+      - pip install tensorboard
+      - sudo ln -Ts $$PT_OUTPUT_DIR $$PT_CODE_DIR/output
+      - export MKL_THREADING_LAYER=GNU
+      #- bash tools/dist_train.sh configs/srtcp/r2plus1d_18_kinetics/pretraining.py 8 --data_dir /mnt/data/data
+      - bash tools/dist_train.sh configs/srtcp/r2plus1d_18_kinetics/finetune_ucf101.py 8 --data_dir /mnt/data/data --validate
+      - bash tools/dist_train.sh configs/srtcp/r2plus1d_18_kinetics/finetune_ucf101_linear.py 8 --data_dir /mnt/data/data --validate
+      #- bash tools/dist_train.sh configs/srtcp/r2plus1d_18_kinetics/finetune_ucf101_linear_largeLR.py 8 --data_dir /mnt/data/data --validate
+
+    # aml_mpirun:
+    #   process_count_per_node: 1
+    #   communicator: "OpenMpi"
+    submit_args:
+      container_args:
+        shm_size: 64g

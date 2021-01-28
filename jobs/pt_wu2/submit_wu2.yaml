@@ -1,0 +1,33 @@
+description: 1010 TCP Train on UCF-101 (224x224)
+
+target:
+  service: philly
+  name: wu2
+  vc: msrnext
+  queue: bonus
+
+environment:
+  image: wgting96/mmcv:latest
+
+storage:
+  data:
+    storage_account_name: imaction
+    container_name: datasets
+
+code:
+  code_upload: True
+  local_dir: $CONFIG_DIR/../../
+
+jobs:
+
+  - name: 1010_r3d_18_ucf101_224
+    sku: G4
+    command:
+      - sudo ln -Ts $$PT_OUTPUT_DIR $$PT_CODE_DIR/output
+      - bash tools/dist_train.sh configs/tcp/pretraining/r3d_18_ucf101_224.py 4 --data_dir /mnt/data/
+    # aml_mpirun:
+    #   process_count_per_node: 1
+    #   communicator: "OpenMpi"
+    submit_args:
+      container_args:
+        shm_size: 64g
