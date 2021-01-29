@@ -28,20 +28,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jobs/ipt_job_manifoldlearning/submit.yaml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="128" lean-forward="true" selection-start-line="21" selection-start-column="128" selection-end-line="21" selection-end-column="128" />
+            <state relative-caret-position="222">
+              <caret line="169" column="8" selection-start-line="169" selection-start-column="8" selection-end-line="169" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_model.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/tcp/tcp_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+            <state relative-caret-position="286">
+              <caret line="151" column="32" lean-forward="true" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="32" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -50,10 +53,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/srtcp/srtcp_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="197" column="27" selection-start-line="197" selection-start-column="27" selection-end-line="197" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyvrl/apis/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1117">
+              <caret line="107" column="72" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/tensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="580">
+              <caret line="61" column="22" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="22" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -62,33 +89,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/base_transform.py">
+        <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="347">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
               <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/compose.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/moco_frame_transform.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#94#106#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/crop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="809">
               <caret line="148" selection-start-line="148" selection-end-line="148" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -121,7 +127,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configs/manifoldlearning/pretraining_runtime_ucf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="-352">
               <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
@@ -130,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools/train_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="457">
+              <caret line="114" column="23" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="23" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -150,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>update</find>
-      <find>del</find>
       <find>non_linear</find>
       <find>validate</find>
       <find>build_dataloader</find>
@@ -180,12 +184,19 @@
       <find>_forward_stem</find>
       <find>num_key_frame_probs</find>
       <find>Iterable</find>
+      <find>init_we</find>
+      <find>init_weigths</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\workspace\code\SR-SVRL</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/configs/tcp/pretraining_runtime_ucf.py" />
         <option value="$PROJECT_DIR$/configs/srtcp/r2plus1d_18_ucf101/finetune_ucf101_linear.py" />
         <option value="$PROJECT_DIR$/configs/tcp/r2plus1d_18_ucf101/finetune_ucf101_linear.py" />
         <option value="$PROJECT_DIR$/configs/srtcp/r2plus1d_18_ucf101/finetune_ucf101_linear_scratch.py" />
@@ -197,7 +208,6 @@
         <option value="$PROJECT_DIR$/pyvrl/models/backbones/r3d.py" />
         <option value="$PROJECT_DIR$/configs/tcp/r3d_18_kinetics/finetune_ucf101.py" />
         <option value="$PROJECT_DIR$/pyvrl/models/classifiers/tsn/tsn_model.py" />
-        <option value="$PROJECT_DIR$/pyvrl/models/pretraining/srtcp/srtcp_model.py" />
         <option value="$PROJECT_DIR$/configs/srtcp/r3d_18_kinetics/pretraining.py" />
         <option value="$PROJECT_DIR$/configs/srtcp/r2plus1d_18_kinetics/finetune_ucf101_linear_largeLR.py" />
         <option value="$PROJECT_DIR$/configs/tcp/r2plus1d_18_kinetics/finetune_ucf101_linear.py" />
@@ -219,7 +229,6 @@
         <option value="$PROJECT_DIR$/configs/manifoldlearning/r2plus1d_18_ucf101/finetune_ucf101_linear.py" />
         <option value="$PROJECT_DIR$/configs/manifoldlearning/r2plus1d_18_ucf101/finetune_ucf101_linear_largeLR.py" />
         <option value="$PROJECT_DIR$/pyvrl/datasets/backends/zip_backend.py" />
-        <option value="$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_dataset.py" />
         <option value="$PROJECT_DIR$/pyvrl/datasets/frame_samplers/random_sampler.py" />
         <option value="$PROJECT_DIR$/configs/manifoldlearning/r3d_18_kinetics/pretraining.py" />
         <option value="$PROJECT_DIR$/configs/manifoldlearning/pretraining_runtime_kinetics.py" />
@@ -235,7 +244,10 @@
         <option value="$PROJECT_DIR$/configs/manifoldlearning/pretraining_runtime_ucf.py" />
         <option value="$PROJECT_DIR$/tools/train_net.py" />
         <option value="$PROJECT_DIR$/jobs/ipt_job_manifoldlearning/submit.yaml" />
+        <option value="$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_dataset.py" />
+        <option value="$PROJECT_DIR$/pyvrl/models/pretraining/srtcp/srtcp_model.py" />
         <option value="$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_model.py" />
+        <option value="$PROJECT_DIR$/pyvrl/models/pretraining/tcp/tcp_model.py" />
       </list>
     </option>
   </component>
@@ -245,6 +257,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1176" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -316,6 +329,12 @@
               <item name="SR-SVRL" type="b2602c69:ProjectViewProjectNode" />
               <item name="SR-SVRL" type="462c0819:PsiDirectoryNode" />
               <item name="pyvrl" type="462c0819:PsiDirectoryNode" />
+              <item name="apis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SR-SVRL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SR-SVRL" type="462c0819:PsiDirectoryNode" />
+              <item name="pyvrl" type="462c0819:PsiDirectoryNode" />
               <item name="datasets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,6 +371,22 @@
               <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="pretraining" type="462c0819:PsiDirectoryNode" />
               <item name="manifoldlearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SR-SVRL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SR-SVRL" type="462c0819:PsiDirectoryNode" />
+              <item name="pyvrl" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="pretraining" type="462c0819:PsiDirectoryNode" />
+              <item name="srtcp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SR-SVRL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SR-SVRL" type="462c0819:PsiDirectoryNode" />
+              <item name="pyvrl" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="pretraining" type="462c0819:PsiDirectoryNode" />
+              <item name="tcp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SR-SVRL" type="b2602c69:ProjectViewProjectNode" />
@@ -481,12 +516,12 @@
       <workItem from="1610634523001" duration="10969000" />
       <workItem from="1610645584478" duration="1383000" />
       <workItem from="1610646997506" duration="69872000" />
-      <workItem from="1611562595628" duration="13484000" />
+      <workItem from="1611562595628" duration="15807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310716000" />
+    <option name="totallyTimeSpent" value="313039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -501,7 +536,7 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19296375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -513,7 +548,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="File Transfer" order="9" sideWeight="0.49946696" visible="true" weight="0.19654842" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49946696" visible="true" weight="0.19673705" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.30776605" />
@@ -564,12 +599,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_model.py</url>
-          <line>213</line>
+          <line>215</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyvrl/models/pretraining/srtcp/srtcp_model.py</url>
-          <line>299</line>
+          <line>301</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -596,33 +631,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/remote_sources/869543414/619226232/torch/autograd/grad_mode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/srtcp/srtcp_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="330" column="59" lean-forward="true" selection-start-line="330" selection-start-column="59" selection-end-line="330" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyvrl/datasets/frame_samplers/uniform_sampler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyvrl/datasets/frame_samplers/random_sampler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -677,16 +685,6 @@
           <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyvrl/apis/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="107" column="72" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,16 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="114" column="70" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="70" />
-          <folding>
-            <element signature="e#94#106#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configs/manifoldlearning/r3d_18_ucf101/pretraining.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="568">
@@ -899,9 +887,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/moco_frame_transform.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobs/ipt_job_manifoldlearning/submit.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="128" selection-start-line="21" selection-start-column="128" selection-end-line="21" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/manifoldlearning/pretraining_runtime_ucf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/crop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="809">
           <caret line="148" selection-start-line="148" selection-end-line="148" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -921,55 +933,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/tensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="580">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="22" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="e#94#106#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/train_net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="457">
+          <caret line="114" column="23" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyvrl/datasets/transforms/moco_frame_transform.py">
+    <entry file="file://$PROJECT_DIR$/pyvrl/builder.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyvrl/apis/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="1117">
+          <caret line="107" column="72" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="72" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_model.py">
+    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/srtcp/srtcp_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="331" lean-forward="true" selection-start-line="331" selection-end-line="331" />
+        <state relative-caret-position="42">
+          <caret line="197" column="27" selection-start-line="197" selection-start-column="27" selection-end-line="197" selection-end-column="27" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configs/manifoldlearning/pretraining_runtime_ucf.py">
+    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/manifoldlearning/manifold_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="222">
+          <caret line="169" column="8" selection-start-line="169" selection-start-column="8" selection-end-line="169" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/ipt_job_manifoldlearning/submit.yaml">
+    <entry file="file://$PROJECT_DIR$/pyvrl/models/pretraining/tcp/tcp_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="128" lean-forward="true" selection-start-line="21" selection-start-column="128" selection-end-line="21" selection-end-column="128" />
+        <state relative-caret-position="286">
+          <caret line="151" column="32" lean-forward="true" selection-start-line="151" selection-start-column="32" selection-end-line="151" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

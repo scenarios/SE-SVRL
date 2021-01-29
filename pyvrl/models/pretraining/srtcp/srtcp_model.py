@@ -195,6 +195,8 @@ class SRTCP(nn.Module):
 
         self.register_buffer("queue_ptr", torch.zeros(1, dtype=torch.long))
 
+        self.init_weights()
+
     @torch.no_grad()
     def _momentum_update_key_encoder(self):
         """
@@ -268,7 +270,7 @@ class SRTCP(nn.Module):
 
         return x_gather[idx_this]
 
-    def init_weigths(self):
+    def init_weights(self):
         self.backbone.init_weights()
         self.head.init_weights()
 

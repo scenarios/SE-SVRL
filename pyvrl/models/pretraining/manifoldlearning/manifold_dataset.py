@@ -110,6 +110,7 @@ class MANIFOLDDataset(Dataset):
         clip_k2_tensor, clip_k2_trans_params = self.manifold_clip_transform.apply_image(frame_k2_list,
                                                                                return_transform_param=True)
 
+        clip_tensor = clip_tensor.permute(1, 0, 2, 3).contiguous()
         clip_q_tensor = clip_q_tensor.permute(1, 0, 2, 3).contiguous()
         clip_k1_tensor = clip_k1_tensor.permute(1, 0, 2, 3).contiguous()
         clip_k2_tensor = clip_k2_tensor.permute(1, 0, 2, 3).contiguous()

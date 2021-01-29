@@ -167,7 +167,7 @@ class MANIFOLD(nn.Module):
                  ):
         super(MANIFOLD, self).__init__()
         self.backbone = build_backbone(backbone)
-        #self.head = TCPHead(**head)
+        self.head = TCPHead(**head)
 
         self.K = queue_size
         self.m = momentum
@@ -197,6 +197,8 @@ class MANIFOLD(nn.Module):
 
         self.register_buffer('indQueue', torch.zeros(queue_size))
         self.indQueue = self.indQueue - 1
+
+        self.init_weights()
 
     @torch.no_grad()
     def _momentum_update_key_encoder(self):
@@ -285,9 +287,9 @@ class MANIFOLD(nn.Module):
 
         return self.queue.clone().detach()[:, pos[0]]
 
-    def init_weigths(self):
+    def init_weights(self):
         self.backbone.init_weights()
-        #self.head.init_weights()
+        self.head.init_weights()
 
         # Moco Copy
         for param_q, param_k in zip(self.backbone.parameters(), self.key_encoder.parameters()):

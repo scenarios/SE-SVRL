@@ -145,7 +145,9 @@ class TCP(nn.Module):
         self.backbone = build_backbone(backbone)
         self.head = TCPHead(**head)
 
-    def init_weigths(self):
+        self.init_weights()
+
+    def init_weights(self):
         self.backbone.init_weights()
         self.head.init_weights()
 
