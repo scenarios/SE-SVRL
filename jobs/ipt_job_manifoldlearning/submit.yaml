@@ -1,4 +1,4 @@
-description: MANIFOLDLEARNING with CtP Experiments R2Plus1D on Ucf (Pretrain) and Ucf (All/Linear Finetune(Adam))， MoCo Augmentation, proj 2048-256, bs 128 T 0.07, all finetune dropout 0.8, linear finetune lr 0.1, 1.0
+description: MANIFOLDLEARNING with CtP Experiments R2Plus1D on Kinetics (Pretrain) and Ucf (All/Linear Finetune(Adam))， MoCo Augmentation, proj 2048-256, bs 256 T 0.07, all finetune dropout 0.8, linear finetune lr 0.1, 1.0
 
 target:
   service: amlk8s
@@ -19,15 +19,15 @@ code:
 
 jobs:
 
-  - name: ML-wCtP-UcfPUcfF-mocoaug-ep400-bs128-ts16-ss112-T0.07-proj-2048-256_ucf-ALFinetune-ep150-bs32-ts16-ss112_ModelR2p1dl18
+  - name: ML-wCtp-K400PUcfF-mocoaug-ep200-bs256-ts16-ss112-T0.07-proj-2048-256_ucf-ALFinetune-ep150-bs32-ts16-ss112_ModelR2p1dl18
     sku: G8
     command:
       - sudo ln -Ts $$PT_OUTPUT_DIR $$PT_CODE_DIR/output
       - export MKL_THREADING_LAYER=GNU
-      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_ucf101/pretraining.py 8 --data_dir /mnt/data
-      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_ucf101/finetune_ucf101.py 8 --data_dir /mnt/data --validate
-      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_ucf101/finetune_ucf101_linear.py 8 --data_dir /mnt/data --validate
-      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_ucf101/finetune_ucf101_linear_largeLR.py 8 --data_dir /mnt/data --validate
+      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_kinetics/pretraining.py 8 --data_dir /mnt/data
+      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_kinetics/finetune_ucf101.py 8 --data_dir /mnt/data --validate
+      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_kinetics/finetune_ucf101_linear.py 8 --data_dir /mnt/data --validate
+      - bash tools/dist_train.sh configs/manifoldlearning/r2plus1d_18_kinetics/finetune_ucf101_linear_largeLR.py 8 --data_dir /mnt/data --validate
 
     # aml_mpirun:
     #   process_count_per_node: 1

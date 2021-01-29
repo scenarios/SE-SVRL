@@ -91,14 +91,15 @@ class build_3d_conv(nn.Module):
                                         dilation=[dilation[0], 1, 1],
                                         groups=groups,
                                         bias=False)
-            _dict['conv_s_aux'] = nn.Conv3d(in_channels=mid_channels,
-                                            out_channels=out_channels,
-                                            kernel_size=[1, 1, 1],
-                                            stride=[1, 1, 1],
-                                            padding=[0, 0, 0],
-                                            dilation=[1, 1, 1],
-                                            groups=groups,
-                                            bias=False)
+            if self.deepshare:
+                _dict['conv_s_aux'] = nn.Conv3d(in_channels=mid_channels,
+                                                out_channels=out_channels,
+                                                kernel_size=[1, 1, 1],
+                                                stride=[1, 1, 1],
+                                                padding=[0, 0, 0],
+                                                dilation=[1, 1, 1],
+                                                groups=groups,
+                                                bias=False)
 
         elif block_type == '3d':
             # build spatial convolution
@@ -278,6 +279,7 @@ class BaseResNet3D(BaseBackbone):
 
         self.stem = self.build_stem_block(stem_type=block_type,
                                           with_bn=with_bn,
+                                          deepshare=deepshare
                                           **stem)
 
         if self.deepshare:
@@ -423,7 +425,8 @@ class BaseResNet3D(BaseBackbone):
                          temporal_stride: int,
                          in_channels: int = 3,
                          with_bn: bool = True,
-                         with_pool: bool = True) -> nn.Sequential:
+                         with_pool: bool = True,
+                         deepshare: bool = True) -> nn.Sequential:
         _dict = OrderedDict()
         if stem_type == '2.5d':
             _dict['conv_s'] = nn.Conv3d(in_channels=in_channels,
@@ -444,15 +447,17 @@ class BaseResNet3D(BaseBackbone):
             if with_bn:
                 _dict['bn_t'] = nn.BatchNorm3d(64, eps=1e-3)
             _dict['relu_t'] = nn.ReLU()
-            _dict['conv_s_aux'] = nn.Conv3d(in_channels=45,
-                                            out_channels=64,
-                                            kernel_size=(1, 1, 1),
-                                            stride=[1, 1, 1],
-                                            padding=[0, 0, 0],
-                                            bias=not with_bn)
-            if with_bn:
-                _dict['bn_s_aux'] = nn.BatchNorm3d(64, eps=1e-3)
-            _dict['relu_s_aux'] = nn.ReLU()
+
+            if deepshare:
+                _dict['conv_s_aux'] = nn.Conv3d(in_channels=45,
+                                                out_channels=64,
+                                                kernel_size=(1, 1, 1),
+                                                stride=[1, 1, 1],
+                                                padding=[0, 0, 0],
+                                                bias=not with_bn)
+                if with_bn:
+                    _dict['bn_s_aux'] = nn.BatchNorm3d(64, eps=1e-3)
+                _dict['relu_s_aux'] = nn.ReLU()
         elif stem_type == '3d':
             _dict['conv'] = nn.Conv3d(in_channels=in_channels,
                                       out_channels=64,
