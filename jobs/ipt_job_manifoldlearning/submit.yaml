@@ -19,7 +19,7 @@ code:
 
 jobs:
 
-  - name: ML-wCtp-K400PUcfF-mocoaug-ep200-bs256-ts16-ss112-T0.07-proj-2048-256_ucf-ALFinetune-ep150-bs32-ts16-ss112_ModelR2p1dl18
+  - name: ML-wCtP-K400PUcfF-mocoaug-ep200-bs256-ts16-ss112-T0.07-proj-2048-256_ucf-ALFinetune-ep150-bs32-ts16-ss112_ModelR2p1dl18
     sku: G8
     command:
       - sudo ln -Ts $$PT_OUTPUT_DIR $$PT_CODE_DIR/output

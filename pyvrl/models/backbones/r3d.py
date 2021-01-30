@@ -279,7 +279,7 @@ class BaseResNet3D(BaseBackbone):
 
         self.stem = self.build_stem_block(stem_type=block_type,
                                           with_bn=with_bn,
-                                          deepshare=deepshare
+                                          deepshare=deepshare,
                                           **stem)
 
         if self.deepshare:
